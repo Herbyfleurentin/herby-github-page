@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/herby-github-page/static/css/main.fb21b65a.css",
-    "main.js": "/herby-github-page/static/js/main.1dd99dd8.js",
+    "main.css": "/herby-github-page/static/css/main.82de6d7f.css",
+    "main.js": "/herby-github-page/static/js/main.cd7a5582.js",
     "static/js/453.9e976c5c.chunk.js": "/herby-github-page/static/js/453.9e976c5c.chunk.js",
     "index.html": "/herby-github-page/index.html",
-    "main.fb21b65a.css.map": "/herby-github-page/static/css/main.fb21b65a.css.map",
-    "main.1dd99dd8.js.map": "/herby-github-page/static/js/main.1dd99dd8.js.map",
+    "main.82de6d7f.css.map": "/herby-github-page/static/css/main.82de6d7f.css.map",
+    "main.cd7a5582.js.map": "/herby-github-page/static/js/main.cd7a5582.js.map",
     "453.9e976c5c.chunk.js.map": "/herby-github-page/static/js/453.9e976c5c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb21b65a.css",
-    "static/js/main.1dd99dd8.js"
+    "static/css/main.82de6d7f.css",
+    "static/js/main.cd7a5582.js"
   ]
 }

@@ -1,30 +1,45 @@
+/* App.css */
+
+/* Mise en forme générale du corps et du conteneur */
 .App {
+  font-family: 'Arial', sans-serif; /* Choix de la police */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  font-family: Arial, sans-serif;
+  height: 100vh; /* Remplir la hauteur de l'écran */
+  background-color: #f0f4f8; /* Couleur de fond douce */
+  margin: 0;
 }
 
-h1 {
-  font-size: 2rem;
-  white-space: nowrap; /* Empêche le texte de se couper sur plusieurs lignes */
-  overflow: hidden;    /* Cache le texte qui dépasse avant l'animation */
-  border-right: 0.1em solid black; /* Crée un curseur clignotant */
-  width: 0; /* Cache initialement le texte */
-  animation: typing 5s steps(50) 1s forwards, blink 0.75s step-end infinite; /* Animation du texte */
+/* Style pour le titre */
+.App h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  line-height: 1.5;
+  margin: 0;
+  animation: fadeIn 1s ease-in-out; /* Animation d'apparition du texte */
 }
 
-/* Animation pour le texte qui apparaît */
-@keyframes typing {
+/* Animation pour faire apparaître le texte progressivement */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
   100% {
-    width: 100%; /* Augmente la largeur pour afficher tout le texte */
+    opacity: 1;
   }
 }
 
-/* Animation pour le curseur clignotant */
-@keyframes blink {
-  50% {
-    border-color: transparent;
+/* Effet d'ombre légère pour le texte */
+.App h1 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query pour rendre la page responsive sur les petits écrans */
+@media (max-width: 600px) {
+  .App h1 {
+    font-size: 1.8rem; /* Réduire la taille du texte sur petits écrans */
   }
 }

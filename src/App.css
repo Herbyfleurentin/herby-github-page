@@ -1,33 +1,30 @@
-/* App.css */
 .App {
-  text-align: center;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
 }
 
-.animated-text {
-  font-size: 2em;
-  color: #61dafb;
-  opacity: 0;
-  animation: fadeIn 3s ease-in-out forwards;
+h1 {
+  font-size: 2rem;
+  white-space: nowrap; /* Empêche le texte de se couper sur plusieurs lignes */
+  overflow: hidden;    /* Cache le texte qui dépasse avant l'animation */
+  border-right: 0.1em solid black; /* Crée un curseur clignotant */
+  width: 0; /* Cache initialement le texte */
+  animation: typing 5s steps(50) 1s forwards, blink 0.75s step-end infinite; /* Animation du texte */
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
+/* Animation pour le texte qui apparaît */
+@keyframes typing {
   100% {
-    opacity: 1;
-    transform: translateY(0);
+    width: 100%; /* Augmente la largeur pour afficher tout le texte */
+  }
+}
+
+/* Animation pour le curseur clignotant */
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }
